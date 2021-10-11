@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Inspiration from source https://www.youtube.com/watch?v=EO-_vwfVi7c&t=1194s-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="se16.qmul.ac.uk.finalapplication.MainActivity">
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Sign Out" />
+
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/age_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+
+    <EditText
+        android:id="@+id/usr_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Age"
+        android:inputType="text"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/peakflow_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Normal Peak Flow"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/usr_peak_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Normal Peak Flow"
+        android:inputType="text"
+        android:textAlignment="center"
+        />
+
+
+    <Button
+        android:id="@+id/btn_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="STORE"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/btn_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="MAP" />
+
+    <Button
+        android:id="@+id/btn_activity3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="EDUCATION" />
+
+    <Button
+        android:id="@+id/btn_activity4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="WEATHER" />
+
+    <Button
+        android:id="@+id/btn_activity5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="TRIGGER DIARY" />
+    <Button
+        android:id="@+id/btn_activity6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="PEAK FLOW DIARY" />
+
+
+</LinearLayout>

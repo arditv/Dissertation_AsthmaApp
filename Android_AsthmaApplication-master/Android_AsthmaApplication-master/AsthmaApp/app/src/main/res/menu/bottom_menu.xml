@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Inspiration from source https://www.youtube.com/watch?v=wKrYU97Wwg4-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <item
+        android:id="@+id/action_hospital"
+        android:enabled="true"
+        android:title="Hospital/GP"
+        android:icon="@drawable/ic_local_hospital_black_24dp"
+        app:showAsAction="ifRoom"
+        />
+</menu>

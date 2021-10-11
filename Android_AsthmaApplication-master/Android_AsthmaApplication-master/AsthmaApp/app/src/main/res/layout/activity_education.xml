@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Inspiration from source https://www.youtube.com/watch?v=Wx1wnv4fzyQ-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EducationActivity">
+
+
+    <Button
+        android:id="@+id/animation_pf"
+        android:layout_width="227dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Peak Flow Animation"
+        app:layout_constraintBottom_toTopOf="@+id/animation_pump"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/animation_pump"
+        android:layout_width="211dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Asthma Pump Animation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/education_heading" />
+
+    <TextView
+        android:id="@+id/education_heading"
+        android:layout_width="207dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="EDUCATION"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ed_symptom_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Symptoms"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_pump" />
+
+    <!--Information from text gathered from source nhs.uk. (2018). Living with. [online] Available at: https://www.nhs.uk/conditions/asthma/living-with/ [Accessed 23 Apr. 2019].-->
+    <TextView
+        android:id="@+id/ed_symptoms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="The most common symptoms of Asthma are wheezing, breathlessness, a tight chest and coughing. (NHS, 2018)"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_symptom_heading" />
+
+    <TextView
+        android:id="@+id/ed_diary_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Trigger and Peak Flow Diary"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_symptoms_text" />
+
+
+    <!--Information from text gathered from source nhs.uk. (2018). Living with. [online] Available at: https://www.nhs.uk/conditions/asthma/living-with/ [Accessed 23 Apr. 2019].-->
+    <TextView
+        android:id="@+id/ed_diary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Keeping a Peak Flow and Trigger diary is essential in helping to control your Asthma. It is vital to identify your possible Asthma triggers, noting in your diary where you are and what you are doing (nhs.uk, 2018). Keeping track of your triggers and your daily peak flow readings will help an Asthma proffesional understand your Ashtma and help you manage it. "
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_diary_heading" />
+
+    <TextView
+        android:id="@+id/ed_weather_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Weather"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_diary_text" />
+
+
+    <!--Information from text gathered from source nhs.uk. (2018). Living with. [online] Available at: https://www.nhs.uk/conditions/asthma/living-with/ [Accessed 23 Apr. 2019].-->
+    <!--information from text gathered from source Asthma UK, A. (2018). Weather as an asthma trigger | Asthma UK. [online] Asthma UK. Available at: https://www.asthma.org.uk/advice/triggers/weather/ [Accessed 20 Apr. 2019].-->
+    <TextView
+        android:id="@+id/ed_weather_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Weather can play a role in increasing your symptoms of Asthma. Cold weather is a common trigger for Asthma symptoms (Nhs.uk,2018) and Hot weather can also affect some (Asthma UK,2018). You can search a city on the weather page of the application and see how the current weather may affect you. Don't rely on the application, make sure to take extra precuations.  "
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_weather_heading" />
+
+    <TextView
+        android:id="@+id/ed_holiday_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Holiday"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_weather_text" />
+<!--Inspiration from text gathered from source Asthma UK. (2016). Travel | Asthma UK. [online] Available at: https://www.asthma.org.uk/advice/living-with-asthma/travel/ [Accessed 20 Apr. 2019].-->
+    <TextView
+        android:id="@+id/ed_holiday_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Pollen, weather, altitude, air travel, accomodation are all factors to consider when choosing a holiday. Speak to your doctor/GP about travel vaccines as well as your travel plans. Make sure to have your written Asthma action plan with you and prepare for an emergency. Get paperwork ready sp you can pass medicine through customs. Be sure to ALWAYS keep your reliever inhaler with you and carry spare enough for the duration of the trip plus an extra weeks supply. Also bring any relevant Emergency card with you, for example the EHIC (European Health Insurance Card). (Asthma UK, 2016)"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_holiday_heading" />
+
+</android.support.constraint.ConstraintLayout>
